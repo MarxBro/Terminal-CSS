@@ -1,0 +1,117 @@
+@import url("http://fonts.googleapis.com/css?family=VT323");
+
+* {
+	margin: 0;
+	padding: 0;
+	@include box-sizing(border-box);
+	&:before, &:after {
+		@include box-sizing(border-box);
+	}
+}
+
+html, body {
+	color: green;
+	height: 100%;
+	font-family: "VT323" monospace;
+	font-size: 100%;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	line-height: 1em;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+html {
+	background: #222222;
+	overflow: hidden;
+	@include bp(small) {
+		padding: 2em;
+	}
+	@include bp(medium) {
+		padding: 4em;
+	}
+	@include bp(big) {
+		padding: 6em;
+	}
+	position: relative;
+}
+
+body {
+	background: black;
+	@include bp(small) {
+		border: 3em solid black;
+		@include border-radius(3em);
+	}
+	@include bp(medium) {
+		border-width: 5em;
+	}
+	@include bp(big) {
+		border-width: 6em;
+	}
+	diplay: block;
+	overflow-x: hidden;
+	overflow-y: auto;
+	> * {
+		display: block;
+		margin-bottom: 0.5em;
+		position: relative;
+		padding-left: 1.5em;
+		&:before {
+			content: ">: ";
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+	}
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+			background-color: darken(green, 20%);
+}
+
+::-webkit-scrollbar-thumb {
+			background-color: green;
+}
+
+::-webkit-scrollbar-button {
+			background-color: darken(green, 10%);
+}
+
+::-webkit-scrollbar-corner {
+			background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	line-height: 1em;
+}
+
+a {
+	color: lighten(green, 20%);
+	&:hover, &:focus {
+		color: lighten(green, 50%);
+	}
+}
+
+ul, ol, .list {
+	display: block;
+	list-style: none;
+	padding-left: 0;
+	&:before {
+		content: "";
+	}
+}
+
+li, .list-item {
+	margin-left: 2.5em;
+	&:before {
+		color: green;
+		content: "-";
+		left: -1em;
+		position: relative;
+	}
+}

@@ -1,0 +1,177 @@
+.set-bold {
+	font-weight: 900;
+}
+
+.set-dim {
+	color: darken(green, 17.5%);
+}
+
+.set-underlined {
+	text-decoration: underline;
+}
+
+.set-blink {
+	animation: blink 1s steps(5, start) infinite;
+	-webkit-animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+	to {
+		visibility: hidden;
+	}
+}
+
+@-webkit-keyframes blink {
+	to {
+		visibility: hidden;
+	}
+}
+
+.set-reverse {
+	background: green;
+	color: black;
+}
+
+.set-hidden {
+	visibility: hidden;
+}
+
+[class*="back-"] {
+	color: white;
+}
+
+.back-default {
+	background: green;
+}
+
+.back-black {
+	background: black;
+}
+
+.back-red {
+	background: red;
+}
+
+.back-green {
+	background: green;
+}
+
+.back-yellow {
+	background: yellow;
+}
+
+.back-blue {
+	background: blue;
+}
+
+.back-magenta {
+	background: magenta;
+}
+
+.back-cyan {
+	background: cyan;
+}
+
+.back-light-gray {
+	background: lighten(gray, 10%);
+}
+
+.back-dark-gray {
+	background: darken(gray, 10%);
+}
+
+.back-light-red {
+	background: lighten(red, 10%);
+}
+
+.back-light-green {
+	background: lighten(green, 10%);
+}
+
+.back-light-yellow {
+	background: lighten(yellow, 10%);
+}
+
+.back-light-blue {
+	background: lighten(blue, 10%);
+}
+
+.back-light-magenta {
+	background: lighten(magenta, 10%);
+}
+
+.back-light-cyan {
+	background: lighten(cyan, 10%);
+}
+
+.back-white {
+	background: white;
+}
+
+.fore-default {
+	color: green;
+}
+
+.fore-black {
+	color: black;
+}
+
+.fore-red {
+	color: red;
+}
+
+.fore-green {
+	color: green;
+}
+
+.fore-yellow {
+	color: yellow;
+}
+
+.fore-blue {
+	color: blue;
+}
+
+.fore-magenta {
+	color: magenta;
+}
+
+.fore-cyan {
+	color: cyan;
+}
+
+.fore-light-gray {
+	color: lighten(gray, 10%);
+}
+
+.fore-dark-gray {
+	color: darken(gray, 10%);
+}
+
+.fore-light-red {
+	color: lighten(red, 10%);
+}
+
+.fore-light-green {
+	color: lighten(green, 10%);
+}
+
+.fore-light-yellow {
+	color: lighten(yellow, 10%);
+}
+
+.fore-light-blue {
+	color: lighten(blue, 10%);
+}
+
+.fore-light-magenta {
+	color: lighten(magenta, 10%);
+}
+
+.fore-light-cyan {
+	color: lighten(cyan, 10%);
+}
+
+.fore-white {
+	color: white;
+}
